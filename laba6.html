@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+<input id="elem1" type="text" name="quantity" placeholder="Цвет фона">
+<input id="butt" type="button" value="Поменять фон"/><br><br>
+<input id="elem2" type="text" name="quantity" placeholder="Цвет текста">
+<input id="butt2" type="button" value="Поменять текст"/><br><br>
+<p id="p2">Hello World!</p>
+
+<input id="elem3" type="text" name="quantity" placeholder="Введите ссылку">
+<button onclick="changeURL()">Изменить адрес</button>
+<a href="https://ya.ru/" id="yandex">Yandex</a>
+<script>
+butt.onclick = function() {
+var val = document.getElementById('elem1').value;
+document.body.style.backgroundColor = val;
+};
+butt2.onclick = function() {
+var val1 = document.getElementById('elem2').value;
+document.getElementById("p2").style.color = val1 ;
+};
+function changeURL(){
+var val1 = document.getElementById('elem3').value;
+document.getElementById("yandex").href= val1;
+}
+</script>
+
+
+</body>
+</html>
